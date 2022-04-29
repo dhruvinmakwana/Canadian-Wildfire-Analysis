@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS wildfire_Data.pointsdata AS SELECT * EXCEPT (row_number) FROM wildfire_Data.interem_pointsdata;
+INSERT INTO wildfire_Data.pointsdata SELECT * EXCEPT (row_number) FROM wildfire_Data.interem_pointsdata
